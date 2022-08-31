@@ -1,0 +1,5 @@
+<div class="container">
+  <div class="w-25" *ngIf="auth.user$ | async as user">
+    <code>{{ stringify(user) }}</code>
+  </div>
+</div>

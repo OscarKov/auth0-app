@@ -1,0 +1,13 @@
+import { Component, OnInit } from '@angular/core';
+import { AuthState } from '@auth0/auth0-angular';
+
+@Component({
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css'],
+})
+export class NavbarComponent implements OnInit {
+  constructor(protected auth: AuthState) {}
+
+  ngOnInit(): void {}
+}
